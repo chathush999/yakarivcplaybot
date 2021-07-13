@@ -10,10 +10,10 @@ from config import BOT_NAME as bn
 async def start(_, message: Message):
     await message.reply_text(
         f"""
-👹💫 යක්ක🇱🇰අඩවිය™ (Group Music Bot) 💫👹
-Telegram UserBot to Play Audio in Telegram Voice Chats 🔊
+yakari music play services  (Group Music Bot) 🎃 
+Telegram UserBot to Play Audio in Telegram Voice Chats 🤖 
 
-**All Users**
+**All Users 🤗 **
 /play <song name> - play song you requested
 /dplay <song name> - play song you requested via deezer
 /splay <song name> - play song you requested via jio saavn
@@ -25,7 +25,7 @@ Telegram UserBot to Play Audio in Telegram Voice Chats 🔊
 /saavn <song name> - download songs you want quickly via saavn
 /video <song name> - download videos you want quickly
 
-**Admins only**
+**Admins only 👮‍♀️ **
 /player - open music player settings panel
 /pause - pause song play
 /resume - resume song play
@@ -35,30 +35,30 @@ Telegram UserBot to Play Audio in Telegram Voice Chats 🔊
 /userbotleave - remove assistant from your chat
 /admincache - Refresh admin list
 
-©2021 @YakkaAdaviyaMusicBot Bot All Rights Reserved
+Made by @slbotzone™ 
 """,
         reply_markup=InlineKeyboardMarkup(
             [
                     [
                         InlineKeyboardButton(
-                             text=" 👪 Bot Support Group ",
-                             url="https://t.me/sltechzoneofficial"),
+                             text="🗣Bot Support Group ",
+                             url="https://t.me/slbotzone"),
                          InlineKeyboardButton(
-                             text=" 🔔 Bot Update Channel ",
-                             url="https://t.me/sltechzone")
+                             text="👀 Bot Update Channel ",
+                             url="https://t.me/sl_bot_zone")
                     ],
                     [
                         InlineKeyboardButton(
-                             text=" 👺 Yakka Adaviya Group ",
-                             url="https://t.me/yakkaadaviyaofficial"),
+                             text=" 😈 Free internet group  ",
+                             url="https://t.me/LIONHEARTnew"),
                          InlineKeyboardButton(
-                             text=" 👹 Yakka Adaviya Channel ",
-                             url="https://t.me/yakkaadaviya")
+                             text=" 😈 Free internet channel  ",
+                             url="https://www.youtube.com/channel/UCvYfJcTr8RY72dIapzMqFQA?sub_confirmation=1")
                     ],
                     [
                         InlineKeyboardButton(
-                            text=" ⚡️ Developer ",
-                             url="https://t.me/hirunaofficial") 
+                            text=" 🎙 Add your group ➕  ",
+                             url="https://t.me/yakarimusicplaybot?startgroup=true") 
                     
                     ]
             ]
@@ -69,13 +69,13 @@ Telegram UserBot to Play Audio in Telegram Voice Chats 🔊
 @Client.on_message(filters.command("start") & ~filters.private & ~filters.channel)
 async def gstart(_, message: Message):
       await message.reply_text("""
-        👹💫 යක්ක🇱🇰අඩවිය™ (Group Music Bot) 💫👹\n\nTelegram UserBot to Play Audio in Telegram Voice Chats 🔊\n\n©2021 @YakkaAdaviyaMusicBot Bot All Rights Reserved
+       🎧  Yakari music play services - Made by - @slbotzone  \n\nTelegram UserBot to Play Audio in Telegram Voice Chats 🎙 \n\n Stay safe 😷  & enjoy 🥳  
         """,
       reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "️Start Bot", url="https://t.me/YakkaAdaviyaMusicBot")
+                        "️💥  Start Bot 💥 ", url="https://t.me/yakarimusicplaybot")
                 ]
             ]
         )
