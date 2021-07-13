@@ -1,8 +1,8 @@
 {
-  "name": "Music Bot",
-  "description": "Telegram UserBot to Play Audio in Telegram Voice Chats 🔊 (@yakkaadaviyamusic)",
+  "name": " 🤖 yakari music play 🤖 ",
+  "description": "Telegram UserBot to Play Audio in Telegram Voice Chats 🤖 (@yakarimusicplaybot)",
   "keywords": ["telegram", "tgvoicebot", "tgvcbot"],
-  "repository": "https://github.com/hirunaofficial/Telegram-Group-Voice-Chat-Bot",
+  "repository": "https://github.com/youtubeslgeekshow/yakarivcplaybot",
   "stack": "container",
   "env": {
     "SESSION_NAME": {
