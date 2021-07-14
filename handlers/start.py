@@ -5,7 +5,7 @@ from config import BOT_USERNAME
 from config import START_IMG as banner
 
 
-@Client.on_message(filters.command(["start", "start@GroupMusicPlayBot"]) & filters.private & ~filters.channel)
+@Client.on_message(filters.command(["start", "start@yakarimusicplaybot"]) & filters.private & ~filters.channel)
 async def start(_, message: Message):
     await message.reply_sticker("CAACAgIAAxkBAAELdDVg7lKBBpbSRagP51fi5ZxmacYEvwACeQQAAsxUSQl-KKP9zEUlkR4E")
     await message.reply_text(
