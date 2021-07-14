@@ -15,9 +15,18 @@
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
 # Modified by Inukaasith 
 
+import os
 from os import getenv
 
 from dotenv import load_dotenv
+
+class Config(object):
+	API_ID = int(os.environ.get("API_ID"))
+	API_HASH = os.environ.get("API_HASH")
+	BOT_TOKEN = os.environ.get("BOT_TOKEN")
+	BOT_USERNAME = os.environ.get("BOT_USERNAME")
+	BOT_OWNER = int(os.environ.get("BOT_OWNER"))
+	DATABASE_URL = os.environ.get("DATABASE_URL")
 
 load_dotenv()
 que = {}
