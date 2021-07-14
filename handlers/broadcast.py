@@ -16,14 +16,14 @@ from configs import Config
 from database import Database
 from pyrogram import Client, filters
 
-BOT_USERNAME = Config.BOT_USERNAME
+BOTUSERNAME = Config.BOTUSERNAME
 BOT_TOKEN = Config.BOT_TOKEN
 API_ID = Config.API_ID
 API_HASH = Config.API_HASH
 BOT_OWNER = Config.BOT_OWNER
 db = Database(Config.DATABASE_URL, BOT_USERNAME)
 broadcast_ids = {}
-Bot = Client(BOT_USERNAME, bot_token=BOT_TOKEN, api_id=API_ID, api_hash=API_HASH)
+Bot = Client(BOTUSERNAME, bot_token=BOT_TOKEN, api_id=API_ID, api_hash=API_HASH)
 
 @bot.on_message(filters.private & filters.command("broadcast") & filters.user(BOT_OWNER) & filters.reply)
 async def broadcast_(c, m):
